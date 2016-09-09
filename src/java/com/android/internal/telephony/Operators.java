@@ -1529,4 +1529,20 @@ public class Operators{
         }
         return operators.containsKey(response) ? operators.get(response) : response;
     }
+    
+    public static String[] operatorReplaces (String responseArray[]) {
+        if(operators == null){
+            initList();
+        }
+        String temp[] = new String[responseArray.length];
+        for (int i = 0; i < temp.length; i++){
+            if(operators.containsKey(reponseArray[i)){
+                temp[i] = operators.get(responseArray[i]);
+            }
+            else {
+                temp[i] = reponseArray[i];
+            }
+        }
+        return temp;
+    }
 }

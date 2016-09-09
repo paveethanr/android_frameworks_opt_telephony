@@ -3201,7 +3201,9 @@ public class RIL extends BaseCommands implements CommandsInterface {
     protected Object
     responseStrings(Parcel p) {
         int num;
-        String response[];
+        String operatorList[];
+        
+        String response[] = Operators.operatorReplaces(operatorList);
 
         response = p.readStringArray();
 

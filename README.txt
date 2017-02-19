@@ -1,3 +1,7 @@
+Implemented a workaround to display the correct carrier name (previous would show carrier id), however this workaround was abandoned due to an increased time during booting. 
+
+==============================
+
 This package contains classes used to manage a DataConnection.
 
 A criticial aspect of this class is that most objects in this
